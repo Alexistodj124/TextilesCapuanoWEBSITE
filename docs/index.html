@@ -485,23 +485,39 @@
         </div>
     </div>
 </footer>	<!-- External JS -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="./vendor/bootstrap/popper.min.js"></script>
-	<script src="./vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="./vendor/select2/select2.min.js "></script>
-	<script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
-	<script src="./vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
-	<script src="./vendor/isotope/isotope.min.js"></script>
-	<script src="./vendor/lightcase/lightcase.js"></script>
-	<script src="./vendor/waypoints/waypoint.min.js"></script>
-	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	 
-	<!-- Main JS -->
-	<script src="./js/app.min.js "></script>
+	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> -->
+	<!-- jQuery (3.x) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Popper + Bootstrap (asegúrate que los archivos existen en docs/vendor/...) -->
+    <script src="./vendor/bootstrap/popper.min.js"></script>
+    <script src="./vendor/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="./vendor/select2/select2.min.js"></script>
+    <script src="./vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./vendor/stellar/jquery.stellar.js"></script>
+    <script src="./vendor/isotope/isotope.min.js"></script>
+    <script src="./vendor/lightcase/lightcase.js"></script>
+    <script src="./vendor/waypoints/waypoint.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Tu JS -->
+    <script src="./js/app.min.js"></script>
+
+    <!-- Inicializaciones simples (si no están en app.min.js) -->
+    <script>
+    // AOS
+    if (window.AOS) AOS.init();
+
+    // OwlCarousel (ejemplo; ajusta a tus clases reales)
+    $('.owl-carousel').owlCarousel({items:1, loop:true, autoplay:true});
+    </script>
+
 
     <!-- PRODUCCION -->
 	<!-- <script src="//localhost:35729/livereload.js"></script> -->
 
-    
+
 </body>
 </html>
